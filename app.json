@@ -1,0 +1,12 @@
+{
+  "name": "camweb",
+  "description": "Password-protected camera snapshot page with gallery.",
+  "stack": "heroku-24",
+  "buildpacks": [{ "url": "heroku/python" }],
+  "env": {
+    "CAM_USER": { "description": "Login username.", "value": "admin" },
+    "CAM_PASSWORD": { "description": "Login password (required).", "generator": "secret" },
+    "MAX_SHOTS": { "description": "How many photos to keep (oldest deleted first).", "value": "50", "required": false }
+  },
+  "formation": { "web": { "quantity": 1, "size": "basic" } }
+}

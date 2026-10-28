@@ -1,0 +1,14 @@
+shots/
+__pycache__/
+*.pem
+*.log
+
+.env
+*.env
+.env.*
+.env.bak
+*.session
+*.session-journal
+*.pyc
+bot_workspace/
+*.bak
